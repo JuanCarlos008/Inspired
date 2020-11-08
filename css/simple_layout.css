@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: #002f35;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    width: 1000px;
+    height: 95vh;
+    background-image: url("../img/close-up-photography-of-leaves-with-droplets-807598.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.box-left{
+    position: relative;
+}
+
+.box-left .box-share{
+    width: 40%;
+    padding: 25px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: #fff;
+    font-size: 14px;
+    /*background-color: #004a2f83;*/
+}
+
+.box-left .box-share .share{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-left .box-share .share a{
+    text-decoration: none;
+}
+
+.box-left .box-share .share a .fab{
+    color: #fff;
+    transition: .3s ease-in-out;
+}
+
+.box-left .box-share .share a .fab:hover{
+    transform: scale(1.5,1.5);
+}
+
+.box-left .box-content{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px 25px;
+    /*background-color: #004a2f83;*/
+    display: flex;
+
+}
+
+.box-left .box-content .slider{
+    flex: 40%;
+    align-self: flex-start;
+    justify-content: flex-end;
+    margin-right: 20px;
+    display: flex;
+}
+
+
+.slider .box-indicators{
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.slider .box-indicators .indicator-num{
+    font-size: 4em;
+    font-weight: 600;
+    color: #fff;
+    opacity: .7;
+}
+
+.slider .box-indicators .indicators-point{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider .box-indicators .indicators-point .indicator{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.slider .box-indicators .indicators-point .indicator.active{
+    background-color: #fff;
+}
+
+
+.slider .angles{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.slider .angles .fa-angle-up,
+.slider .angles .fa-angle-down{
+    opacity: .7;
+    padding: 5px;
+}
+
+.box-left .box-content .info{
+    color: #fff;
+}
+
+.box-content .info .sub, .box-content .info .title{
+    text-transform: uppercase;
+}
+
+.box-content .info .title{
+    font-size: 2.7em;
+    font-weight: 500;
+}
+
+.box-content .info .text{
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+.box-content .info .read{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    
+    display: flex;
+    align-items: center;
+}
+
+
+.box-content .info .read .fas{
+    font-size: 20px;
+    margin-left: 10px;
+    opacity: .7;
+}
+
+/*-----------------Box Right-------------------*/
+
+
+.box-right{
+    position: relative;
+    background-color: #004a2f;
+    overflow: hidden;
+}
+
+.box-right .nav-bar{
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box-right .nav-bar a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid transparent;
+    padding: 5px 0;
+    transition: .3s ease-in-out;
+}
+
+.box-right .nav-bar a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.box-right .nav-bar a.active{
+    border-bottom: 1px solid #fff;
+}
+
+.box-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    font-size: 8em;
+    letter-spacing: 10px;
+    font-weight: 700;
+}
+
+.text-2{
+    background-image: url("../img/close-up-photography-of-leaves-with-droplets-807598.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+
+.box-right .box-num{
+    position: absolute;
+    left: 0;
+    bottom: -160px;
+    width: 100%;
+    font-size: 15em;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-right .box-num .num-clip{
+    position: relative;
+    background-image: url("../img/close-up-photography-of-leaves-with-droplets-807598.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+.box-right .box-num .num{
+    color: #fff;
+}
+
